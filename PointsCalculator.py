@@ -8,7 +8,7 @@ Gate = str(input('Has the gate changed?(y/n):'))
 if Gate == str('y'):
     GateStart = int(input('Base gate:'))
     GateNo = int(input('Actual gate:'))
-    GateMeters = float(input('Difference in meters:'))
+    GateMeters = float(input('Difference in meters (mostly 0.5 meter per gate):'))
     GateFactor = float(input('Gate factor:'))
     GatePoints = round(float(-GateMeters * GateFactor), 1)
 
