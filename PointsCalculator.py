@@ -50,8 +50,13 @@ elif Wind > float('0'):
     WindFactorHead = float(input('Wind factor for head wind:'))
     WindPoints = round(float(Wind * -WindFactorHead), 1)
 
-total = GatePoints + DistancePoints + JudgesPoints + WindPoints
+Total = GatePoints + DistancePoints + JudgesPoints + WindPoints
 
+if Total < float('0'):
+	Total = 0
 
-print('Total:', total)
+else:
+ 	Total = Total
+
+print('Total:', Total)
 input('\nPress Enter to end the program')
