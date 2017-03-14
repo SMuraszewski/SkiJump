@@ -50,8 +50,13 @@ elif Wind > float('0'):
     WindFactorHead = float(input('Współczynnik dla wiatru pod narty:'))
     WindPoints = round(float(Wind * -WindFactorHead), 1)
 
-total = GatePoints + DistancePoints + JudgesPoints + WindPoints
+Total = GatePoints + DistancePoints + JudgesPoints + WindPoints
 
+if Total < float('0'):
+	Total = 0
 
-print('Łącznie:', total)
+else:
+ 	Total = Total
+
+print('Łącznie:', Total)
 input('\nNaciśnij Enter, żeby zamknąć')
